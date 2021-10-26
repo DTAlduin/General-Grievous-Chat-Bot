@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>
+        Hello there
+    </pattern>
+    <template>
+        General Kenobi
+    </template>
+  </category>
+  <category>
+    <pattern>
+        # sand #
+    </pattern>
+    <template>
+        I don't like sand. It's coarse and rough and irritating and it gets everywhere.
+    </template>
+  </category>
+  
+  <category>
+      <pattern>
+          What is R2D2's secret message
+      </pattern>
+      <template>
+          <link>
+              <text>
+                  D2D2's secret message
+              </text>
+              <url>
+                  https://youtu.be/Uj1ykZWtPYI
+              </url>
+          </link>
+      </template>
+  </category>
+  
+  <category>
+      <pattern># movie # series #</pattern>
+      <template>Do you like Star Wars?</template>  
+   </category>
+   <category>
+      <pattern>Yes</pattern>
+      <that>Do you like Star Wars</that>
+      <template>Nice, I like the prequel memes that came out of them.</template>
+   </category>
+   <category>
+      <pattern>no</pattern>
+      <that>Do you like Star Wars</that>
+      <template>Ok! But the first 6 were pretty good.</template>
+   </category> 
+  
+  <category>
+<pattern>Who is Darth Vader</pattern>
+<template>Before he became a disciple of the dark side, Darth Vader was Anakin Skywalker, a goodhearted Jedi and hero of the Clone Wars. While he was considered one of the most powerful Jedi in the galaxy, Anakin had broken the Order's code by secretly marrying Senator Padmé Amidala.</template>
+</category>
+<category>
+<pattern>Who is General Grievous</pattern>
+<template>Grievous, born as Qymaen jai Sheelal, was the cyborg Supreme Commander of the Droid Army of the Confederacy of Independent Systems for most of the Clone Wars. Grievous was originally a Kaleesh from the planet Kalee, where he lived his early life.</template>
+</category>
+  <category>
+<pattern>Who is Luke Skywalker</pattern>
+<template>Luke Skywalker was a Tatooine farmboy who rose from humble beginnings to become one of the greatest Jedi the galaxy has ever known. Along with his friends Princess Leia and Han Solo, Luke battled the evil Empire, discovered the truth of his parentage, and ended the tyranny of the Sith.</template>
+</category>
+<category>
+<pattern>Who is Han Solo</pattern>
+<template>Han Solo rose from an impoverished childhood on the mean streets of Corellia to become one of the heroes of the Rebel Alliance. As captain of the Millennium Falcon, Han and his co-pilot Chewbacca came to believe in the cause of galactic freedom, joining Luke Skywalker and Princess Leia Organa in the fight against the Empire.</template>
+</category>
+<category>
+<pattern>Who is Obi Wan Kenobi</pattern>
+<template>
+    <random>
+        <li>Jesus</li>
+        <li>A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor.</li>
+    </random>
+</template>
+</category>
+<category>
+<pattern>Who is Yoda</pattern>
+<template>
+    <random>
+        <li>He is a ketamine addict.</li>
+        <li>Yoda was a legendary Jedi Master and stronger than most in his connection with the Force.</li>
+        <li>
+            <image>https://i.kym-cdn.com/photos/images/newsfeed/001/547/898/e96.jpg</image>
+        </li>
+    </random>
+    </template>
+</category>
+<category>
+<pattern>Who is Boba Fett</pattern>
+<template>Boba Fett was a human male bounty hunter whose career spanned decades, from the fall of the Galactic Republic to the rise of the Galactic Empire. Originally code-named Alpha, he was an unaltered clone of the famed Mandalorian bounty hunter Jango Fett.
+</template>
+</category>
+<category>
+<pattern>Who is R2D2</pattern>
+<template>A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO.</template>
+</category>
+<category>
+<pattern>Who is C3PO</pattern>
+<template>Built by Anakin Skywalker, C-3PO was designed as a protocol droid intended to assist in etiquette, customs, and translation, boasting that he is "fluent in over six million forms of communication".
+</template>
+</category>
+<category>
+<pattern>Who is Princess Leia</pattern>
+<template>
+    <random>
+<li>Princess Leia Organa was one of the greatest leaders of the Rebel Alliance, fearless on the battlefield and dedicated to ending the Empire’s tyranny. Daughter of Padmé Amidala and Anakin Skywalker, sister of Luke Skywalker, and with a soft spot for scoundrels, Leia ranked among the galaxy’s great heroes.</li>
+<li>Luke's sister</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>Who is Padme</pattern>
+<template>
+<random>
+<li>Dead</li>
+<li>Anakin's wife</li>
+<li>Padmé Amidala was a courageous, hopeful leader, serving as Queen and then Senator of Naboo -- and was also handy with a blaster. Despite her ideals and all she did for the cause of peace, her secret, forbidden marriage to Jedi Anakin Skywalker would prove to have dire consequences for the galaxy.</li>
+</random>
+</template>
+</category>
+<category>
+<pattern>Tell me who is *</pattern>
+<template><srai>WHO IS <star/></srai></template>
+</category>
+
+  <category>
+    <pattern>
+        My name is *
+    </pattern>
+    <template> 
+        Hello General <set name = "user"><star/></set>
+    </template>
+  </category>  
+  <category>
+    <pattern>
+        Bye Bye
+    </pattern>
+    <template>
+        Until we meet again General <get name = "user"/>
+    </template>
+  </category>
+  <category>
+    <pattern>
+        Admiral, we have enemy ships in sector 47
+    </pattern>
+    <template>
+        It's a trap!
+    </template>
+  </category>
+  <category>
+    <pattern>
+        Obi Wan told me you killed my father
+    </pattern>
+    <template>
+        No, I am your father.
+    </template>
+  </category>
+  <category>
+    <pattern>
+        Are these your droids
+    </pattern>
+    <template>
+        These are not the Droids you are looking for.
+    </template>
+  </category>
+  <category>
+    <pattern>
+        *
+    </pattern>
+    <template>
+        I have no answer for that.
+    </template>
+  </category>
+</aiml>
